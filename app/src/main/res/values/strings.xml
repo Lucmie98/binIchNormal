@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">binIchNormal</string>
+    <string name="game_next">weiter</string>
+    <string name="game_back">zurück</string>
+    <string name="game_yes">ja</string>
+    <string name="game_no">nein</string>
+    <string name="game_answer">Das haben die anderen geantwortet:</string>
+    <string name="game_question">Bin ich normal?</string>
+    <string name="game_normal">Du bist normal!</string>
+    <string name="category_main_menu">Hauptmenü</string>
+    <string name="category_car">Auto</string>
+    <string name="category_work">Beruf</string>
+    <string name="category_computer">Computer</string>
+
+    <string name="main_menu_con_des_start_btn">blauer Startbutton</string>
+    <string name="main_menu_con_des_category_btn">grauer Kategorienbutton</string>
+    <string name="main_menu_con_des_profile_btn">grauer Profilnbutton</string>
+    <string name="main_menu_con_des_imprint_btn">grauer Impressumbutton</string>
+
 </resources>
