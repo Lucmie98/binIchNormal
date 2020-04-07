@@ -1,20 +1,20 @@
 <resources>
     <string name="app_name">binIchNormal</string>
-    <string name="start_button">Bin ich normal?</string>
-    <string name="category">Kategorien</string>
-    <string name="profile">Mein Profil</string>
-    <string name="imprint">Impressum</string>
-    <string name="next">weiter</string>
-    <string name="back">zurück</string>
-    <string name="yes">ja</string>
-    <string name="no">nein</string>
-    <string name="answer">Das haben die anderen geantwortet:</string>
-    <string name="question">Bin ich normal?</string>
-    <string name="normal">Du bist normal!</string>
-    <string name="main_menu">Hauptmenü</string>
-    <string name="car">Auto</string>
-    <string name="work">Beruf</string>
-    <string name="computer">Computer</string>
+    <string name="main_menu_start_button">Bin ich normal?</string>
+    <string name="main_menu_category">Kategorien</string>
+    <string name="main_menu_profile">Mein Profil</string>
+    <string name="main_menu_imprint">Impressum</string>
+    <string name="game_next">weiter</string>
+    <string name="game_back">zurück</string>
+    <string name="game_yes">ja</string>
+    <string name="game_no">nein</string>
+    <string name="game_answer">Das haben die anderen geantwortet:</string>
+    <string name="game_question">Bin ich normal?</string>
+    <string name="game_normal">Du bist normal!</string>
+    <string name="category_main_menu">Hauptmenü</string>
+    <string name="category_car">Auto</string>
+    <string name="category_work">Beruf</string>
+    <string name="category_computer">Computer</string>
 
     <string name="content_description_arrow">Pfeil im Button</string>
     <string name="content_description_car">Auto im Button</string>

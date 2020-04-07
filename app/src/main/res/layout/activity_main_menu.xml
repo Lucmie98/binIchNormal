@@ -7,14 +7,16 @@
     android:layout_height="match_parent">
 
     <include
-        android:id="@+id/background_main_menue"
-        layout="@layout/background"
+        android:id="@+id/include_background_main_menue"
+        layout="@layout/fragement_background"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/start"
@@ -25,7 +27,7 @@
         android:layout_marginEnd="16dp"
         android:background="@drawable/blue_button"
         android:drawableEnd="@drawable/ic_arrow_right_white"
-        android:text="@string/start_button"
+        android:text="@string/main_menu_start_button"
         android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -52,7 +54,7 @@
         android:layout_marginEnd="16dp"
         android:background="@drawable/gray_button"
         android:drawableEnd="@drawable/ic_arrow_right_black"
-        android:text="@string/category"
+        android:text="@string/main_menu_category"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/start" />
@@ -66,13 +68,13 @@
         android:layout_marginEnd="16dp"
         android:background="@drawable/gray_button"
         android:drawableEnd="@drawable/ic_arrow_right_black"
-        android:text="@string/profile"
+        android:text="@string/main_menu_profile"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/category" />
 
     <Button
-        android:id="@+id/impressum"
+        android:id="@+id/imprint"
         android:layout_width="0dp"
         android:layout_height="48dp"
         android:layout_marginStart="16dp"
@@ -80,9 +82,63 @@
         android:layout_marginEnd="16dp"
         android:background="@drawable/gray_button"
         android:drawableEnd="@drawable/ic_arrow_right_black"
-        android:text="@string/imprint"
+        android:text="@string/main_menu_imprint"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/myProfile" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/test"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/gray_button"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imprint">
+
+        <Button
+            android:id="@+id/testButton"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:background="@android:color/transparent"
+            android:text="@string/category_computer"
+            app:layout_constraintBottom_toBottomOf="@id/test"
+            app:layout_constraintEnd_toEndOf="@id/test"
+            app:layout_constraintStart_toStartOf="@id/test"
+            app:layout_constraintTop_toTopOf="@id/test" />
+
+        <ImageView
+            android:id="@+id/pfeilImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="2dp"
+            app:layout_constraintBottom_toBottomOf="@id/test"
+            app:layout_constraintEnd_toEndOf="@id/test"
+            app:layout_constraintTop_toTopOf="@id/test"
+            app:srcCompat="@drawable/ic_arrow_right_black" />
+
+        <ImageView
+            android:id="@+id/carImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="2dp"
+            app:layout_constraintBottom_toBottomOf="@id/testButton"
+            app:layout_constraintEnd_toStartOf="@id/testButton"
+            app:layout_constraintTop_toTopOf="@id/testButton"
+            app:srcCompat="@drawable/ic_car" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/test"
+        app:srcCompat="@drawable/ic_imprint" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

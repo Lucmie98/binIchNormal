@@ -7,8 +7,8 @@
     android:layout_height="match_parent">
 
     <include
-        android:id="@+id/backgroud_category_menue"
-        layout="@layout/background"
+        android:id="@+id/include_backgroud_category_menue"
+        layout="@layout/fragement_background"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -26,7 +26,7 @@
         android:background="@drawable/gray_button"
         android:paddingStart="0dp"
         android:paddingEnd="0dp"
-        android:text="@string/main_menu"
+        android:text="@string/category_main_menu"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -41,7 +41,7 @@
         android:background="@drawable/gray_button"
         android:paddingStart="0dp"
         android:paddingEnd="0dp"
-        android:text="@string/car"
+        android:text="@string/category_car"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/back_to_main_menue" />
@@ -62,7 +62,7 @@
             android:layout_height="match_parent"
             android:background="@drawable/gray_button"
             android:gravity="center"
-            android:text="@string/work"
+            android:text="@string/category_work"
             android:textAllCaps="true"
             android:textColor="@android:color/black" />
     </FrameLayout>
