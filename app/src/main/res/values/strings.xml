@@ -14,5 +14,7 @@
 
     <string name="main_menu_con_des_start_btn">blauer Startbutton</string>
     <string name="main_menu_con_des_category_btn">grauer Kategorienbutton</string>
+    <string name="main_menu_con_des_profile_btn">grauer Profilnbutton</string>
+    <string name="main_menu_con_des_imprint_btn">grauer Impressumbutton</string>
 
 </resources>
