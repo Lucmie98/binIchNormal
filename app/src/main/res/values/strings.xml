@@ -1,9 +1,5 @@
 <resources>
     <string name="app_name">binIchNormal</string>
-    <string name="main_menu_start_button">Bin ich normal?</string>
-    <string name="main_menu_category">Kategorien</string>
-    <string name="main_menu_profile">Mein Profil</string>
-    <string name="main_menu_imprint">Impressum</string>
     <string name="game_next">weiter</string>
     <string name="game_back">zurück</string>
     <string name="game_yes">ja</string>
@@ -16,6 +12,7 @@
     <string name="category_work">Beruf</string>
     <string name="category_computer">Computer</string>
 
-    <string name="content_description_arrow">Pfeil im Button</string>
-    <string name="content_description_car">Auto im Button</string>
+    <string name="main_menu_con_des_start_btn">blauer Startbutton</string>
+    <string name="main_menu_con_des_category_btn">grauer Kategorienbutton</string>
+
 </resources>

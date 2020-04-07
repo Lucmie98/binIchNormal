@@ -19,22 +19,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/start"
-        android:layout_width="0dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/blue_button"
-        android:drawableEnd="@drawable/ic_arrow_right_white"
-        android:text="@string/main_menu_start_button"
-        android:textColor="@android:color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/scorePoints" />
-
-    <Button
-        android:id="@+id/scorePoints"
+        android:id="@+id/btn_score_points"
         android:layout_width="wrap_content"
         android:layout_height="32dp"
         android:layout_marginTop="16dp"
@@ -45,100 +30,26 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/category"
+    <ImageView
+        android:id="@+id/img_start_btn"
         android:layout_width="0dp"
         android:layout_height="48dp"
-        android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/gray_button"
-        android:drawableEnd="@drawable/ic_arrow_right_black"
-        android:text="@string/main_menu_category"
+        android:contentDescription="@string/main_menu_con_des_start_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/start" />
-
-    <Button
-        android:id="@+id/myProfile"
-        android:layout_width="0dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/gray_button"
-        android:drawableEnd="@drawable/ic_arrow_right_black"
-        android:text="@string/main_menu_profile"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/category" />
-
-    <Button
-        android:id="@+id/imprint"
-        android:layout_width="0dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/gray_button"
-        android:drawableEnd="@drawable/ic_arrow_right_black"
-        android:text="@string/main_menu_imprint"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/myProfile" />
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/test"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/gray_button"
-        android:clickable="true"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imprint">
-
-        <Button
-            android:id="@+id/testButton"
-            android:layout_width="wrap_content"
-            android:layout_height="48dp"
-            android:background="@android:color/transparent"
-            android:text="@string/category_computer"
-            app:layout_constraintBottom_toBottomOf="@id/test"
-            app:layout_constraintEnd_toEndOf="@id/test"
-            app:layout_constraintStart_toStartOf="@id/test"
-            app:layout_constraintTop_toTopOf="@id/test" />
-
-        <ImageView
-            android:id="@+id/pfeilImage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:elevation="2dp"
-            app:layout_constraintBottom_toBottomOf="@id/test"
-            app:layout_constraintEnd_toEndOf="@id/test"
-            app:layout_constraintTop_toTopOf="@id/test"
-            app:srcCompat="@drawable/ic_arrow_right_black" />
-
-        <ImageView
-            android:id="@+id/carImage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:elevation="2dp"
-            app:layout_constraintBottom_toBottomOf="@id/testButton"
-            app:layout_constraintEnd_toStartOf="@id/testButton"
-            app:layout_constraintTop_toTopOf="@id/testButton"
-            app:srcCompat="@drawable/ic_car" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        app:layout_constraintTop_toBottomOf="@id/btn_score_points"
+        app:srcCompat="@drawable/ic_start" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/img_category_btn"
         android:layout_width="0dp"
         android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/main_menu_con_des_category_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/test"
-        app:srcCompat="@drawable/ic_imprint" />
+        app:layout_constraintTop_toBottomOf="@id/img_start_btn"
+        app:srcCompat="@drawable/ic_category" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
