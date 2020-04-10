@@ -15,8 +15,3 @@ The guide on everything you need to know about project structure.
 It explains basic and advanced naming conventions and structural guideline.
 If in doubt, please refer to this document.
 https://github.com/ribot/android-guidelines/blob/master/project_and_code_guidelines.md
-
-
-
-
-
