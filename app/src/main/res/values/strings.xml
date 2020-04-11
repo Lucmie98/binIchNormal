@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">binIchNormal</string>
+
+    <!--game strings-->
     <string name="game_next">weiter</string>
     <string name="game_back">zurück</string>
     <string name="game_yes">ja</string>
@@ -7,11 +9,14 @@
     <string name="game_answer">Das haben die anderen geantwortet:</string>
     <string name="game_question">Bin ich normal?</string>
     <string name="game_normal">Du bist normal!</string>
-    <string name="category_main_menu">Hauptmenü</string>
-    <string name="category_car">Auto</string>
-    <string name="category_work">Beruf</string>
-    <string name="category_computer">Computer</string>
 
+    <!--category strings-->
+    <string name="category_con_des_main_menu_btn">grauer Hauptmenübutton</string>
+    <string name="category_con_des_car_btn">grauer Button für Autokategorie</string>
+    <string name="category_con_des_work_btn">grauer Button für Berufkategorie</string>
+    <string name="category_con_des_computer_btn">grauer Button für Computerkategorie</string>
+
+    <!--main menu strings-->
     <string name="main_menu_con_des_start_btn">blauer Startbutton</string>
     <string name="main_menu_con_des_category_btn">grauer Kategorienbutton</string>
     <string name="main_menu_con_des_profile_btn">grauer Profilnbutton</string>

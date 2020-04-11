@@ -16,55 +16,71 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/back_to_main_menue"
+    <ImageView
+        android:id="@+id/img_main_menu"
         android:layout_width="0dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/gray_button"
-        android:paddingStart="0dp"
-        android:paddingEnd="0dp"
-        android:text="@string/category_main_menu"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="32dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/category_con_des_main_menu_btn"
+        app:layout_constraintEnd_toEndOf="@+id/include_backgroud_category_menue"
+        app:layout_constraintStart_toStartOf="@+id/include_backgroud_category_menue"
+        app:layout_constraintTop_toTopOf="@+id/include_backgroud_category_menue"
+        app:srcCompat="@drawable/ic_main_menu" />
 
-    <Button
-        android:id="@+id/car"
+    <ScrollView
         android:layout_width="0dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="16dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/gray_button"
-        android:paddingStart="0dp"
-        android:paddingEnd="0dp"
-        android:text="@string/category_car"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/back_to_main_menue" />
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/include_backgroud_category_menue"
+        app:layout_constraintStart_toStartOf="@+id/include_backgroud_category_menue"
+        app:layout_constraintTop_toBottomOf="@+id/img_main_menu">
 
-    <FrameLayout
-        android:layout_width="0dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/car">
-
-        <TextView
-            android:id="@+id/work"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/gray_button"
-            android:gravity="center"
-            android:text="@string/category_work"
-            android:textAllCaps="true"
-            android:textColor="@android:color/black" />
-    </FrameLayout>
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_car_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/category_con_des_car_btn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_car_button" />
+
+            <ImageView
+                android:id="@+id/img_work_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/category_con_des_work_btn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_car_btn"
+                app:srcCompat="@drawable/ic_work_button" />
+
+            <ImageView
+                android:id="@+id/img_computer_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/category_con_des_computer_btn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img_work_btn"
+                app:srcCompat="@drawable/ic_computer_button" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
