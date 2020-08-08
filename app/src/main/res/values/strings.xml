@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">binIchNormal</string>
+
+    <!-- main game specific strings -->
+    <string name="game_next">weiter</string>
+    <string name="game_back">zurück</string>
+    <string name="game_yes">ja</string>
+    <string name="game_no">nein</string>
+    <string name="game_answer">Das haben die anderen geantwortet:</string>
+    <string name="game_question">Bin ich normal?</string>
+    <string name="game_normal">Du bist normal!</string>
+    <string name="game_not_normal">Du bist nicht normal!</string>
+    <string name="game_con_des_question_img">Hintergrund für die Frage</string>
+    <string name="game_answer_of_others">Das haben die anderen geantwortet:</string>
+    <string name="game_sample_text">Das ist ein Beispielsatz, er soll überprüfen, ob mehrzeilige Texte formatiert werden</string>
+    <string name="game_sample_percentage">50%</string>
+    <string name="game_con_des_continue_btn">Weiter Button zur nächsten Frage</string>
+    <string name="game_con_des_back_btn">Zurück Button zum Startmenü</string>
+
+    <!-- main menu specific strings -->
+    <string name="main_menu_con_des_start_btn">blauer Startbutton</string>
+    <string name="main_menu_con_des_category_btn">grauer Kategorienbutton</string>
+    <string name="main_menu_con_des_profile_btn">grauer Profilnbutton</string>
+    <string name="main_menu_con_des_imprint_btn">grauer Impressumbutton</string>
+
+
 </resources>
