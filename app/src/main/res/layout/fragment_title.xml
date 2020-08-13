@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.navigation.TitleFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/titleConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundColor">
+
+        <Button
+            android:id="@+id/btn_score_points"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/score_points_button"
+            android:text="@string/game_points_placeholder"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/img_start_btn"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="32dp"
+            android:contentDescription="@string/main_menu_con_des_start_btn"
+            app:layout_constraintBottom_toTopOf="@+id/img_category_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_score_points"
+            app:srcCompat="@drawable/ic_start" />
+
+        <ImageView
+            android:id="@+id/img_category_btn"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:contentDescription="@string/main_menu_con_des_category_btn"
+            app:layout_constraintBottom_toTopOf="@+id/img_profile_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_start_btn"
+            app:srcCompat="@drawable/ic_category" />
+
+        <ImageView
+            android:id="@+id/img_profile_btn"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:contentDescription="@string/main_menu_con_des_profile_btn"
+            app:layout_constraintBottom_toTopOf="@+id/img_imprint_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_category_btn"
+            app:srcCompat="@drawable/ic_profile" />
+
+        <ImageView
+            android:id="@+id/img_imprint_btn"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="96dp"
+            android:contentDescription="@string/main_menu_con_des_imprint_btn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_profile_btn"
+            app:srcCompat="@drawable/ic_imprint" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

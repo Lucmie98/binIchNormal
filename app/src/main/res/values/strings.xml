@@ -1,6 +1,14 @@
 <resources>
     <string name="app_name">binIchNormal</string>
 
+    <string name="rules">Spielregeln</string>
+    <string name="rules_text">Beispieltext für die Regeln</string>
+
+    <string name="about">Über</string>
+    <string name="about_text">Beispieltext für die Über-Seite</string>
+
+    <string name="share">Teilen</string>
+
     <!-- main game specific strings -->
     <string name="game_next">weiter</string>
     <string name="game_back">zurück</string>
@@ -16,6 +24,7 @@
     <string name="game_sample_percentage">50%</string>
     <string name="game_con_des_continue_btn">Weiter Button zur nächsten Frage</string>
     <string name="game_con_des_back_btn">Zurück Button zum Startmenü</string>
+    <string name="game_points_placeholder">0P.</string>
 
     <!-- main menu specific strings -->
     <string name="main_menu_con_des_start_btn">blauer Startbutton</string>
